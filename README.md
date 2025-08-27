@@ -87,3 +87,76 @@ OOP IMPLEMENTATION
    Association: PPE is associated with Employees (who use it) and Inspections (which ensure safety compliance). Lifecycle records link PPE and Employees together for usage tracking.
 
    Encapsulation: Data like ppeId, inspectionDetails, and employeeAssignment are declared as private to ensure secure data handling.
+
+
+
+   UML Diagram:
+
+
+               ┌───────────────────┐
+               │      User         │
+               ├───────────────────┤
+               │ - userId          │
+               │ - name            │
+               │ - email           │
+               │ - phone           │
+               ├───────────────────┤
+               │ + login()         │
+               │ + logout()        │
+               └───────▲───────────┘
+                       │
+      ┌────────────────┼───────────────────┐
+      │                                    │
+┌───────────────┐                   ┌───────────────┐
+│   Employee    │                   │     Admin     │
+├───────────────┤                   ├───────────────┤
+│ - department  │                   │               │
+│ - assignedPPE │                   │               │
+├───────────────┤                   ├───────────────┤
+│ + requestPPE()│                   │+ registerPPE()│
+│ + viewHistory()│                  │+ managePPE()  │
+└────────────────┘                  │+ generateReports()│
+                                    └────────────────────┘
+
+┌───────────────────┐
+│       PPE         │
+├───────────────────┤
+│ - ppeId           │
+│ - ppeType         │
+│ - status          │
+│ - issueDate       │
+│ - expiryDate      │
+├───────────────────┤
+│ + assignToEmployee()│
+│ + updateStatus()   │
+│ + markExpired()    │
+└─────────▲─────────┘
+          │
+          │ 1..*
+┌────────────────────┐
+│    LifecycleRecord │
+├────────────────────┤
+│ - recordId         │
+│ - employeeId       │
+│ - ppeId            │
+│ - issueDate        │
+│ - returnDate       │
+│ - status           │
+├────────────────────┤
+│ + createRecord()   │
+│ + updateRecord()   │
+│ + generateReport() │
+└────────────────────┘
+
+┌───────────────────┐
+│   Inspection      │
+├───────────────────┤
+│ - inspectionId    │
+│ - ppeId           │
+│ - inspectorId     │
+│ - inspectionDate  │
+│ - condition       │
+├───────────────────┤
+│ + scheduleInspection()│
+│ + updateCondition()   │
+└───────────────────────┘
