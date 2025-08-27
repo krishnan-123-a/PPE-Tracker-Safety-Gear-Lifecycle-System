@@ -3,13 +3,16 @@
 
    The PPE Tracker – Safety Gear Lifecycle System is a Java-based application integrated with a MySQL database to simplify and automate the management of personal protective equipment (PPE) throughout its lifecycle. It manages employees, safety gear issuance, usage history, inspections, and replacement tracking to ensure workplace safety and compliance.
 
+
 **PROBLEM STATEMENT**
 
    Many industries face challenges in tracking issued PPE, monitoring usage, ensuring timely replacement, and maintaining compliance with safety regulations. Manual tracking often leads to misplaced records, unsafe usage of expired gear, and increased safety risks.
 
+
 **SOLUTION**
 
    This system provides a centralized software platform to manage employee PPE issuance, inspections, and replacement schedules seamlessly. It ensures efficient resource utilization, improved safety compliance, and transparent tracking of PPE usage history.
+
 
 **TARGET USERS**
 
@@ -20,6 +23,7 @@
    **Safety Officers:** Inspect PPE, update condition status, and ensure compliance.
 
    **Managers:** Oversee operations, track PPE distribution, and ensure timely replacement.
+   
 
 **FEATURES**
 
@@ -34,6 +38,7 @@
    PPE replacement and history tracking
 
    Report generation for safety audits
+
 
 **OOP CONCEPT**
   Main Classes
@@ -71,6 +76,7 @@
 6. Admin (extends User)
 
    Methods: registerPPE(), managePPE(), generateReports()
+
 
 OOP IMPLEMENTATION
 
