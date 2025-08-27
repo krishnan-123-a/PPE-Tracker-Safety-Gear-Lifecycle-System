@@ -1,5 +1,5 @@
 # PPE-Tracker-Safety-Gear-Lifecycle-System
-PPE TRACKER – SAFETY GEAR LIFECYCLE SYSTEM
+**PPE TRACKER – SAFETY GEAR LIFECYCLE SYSTEM**
 
 The PPE Tracker – Safety Gear Lifecycle System is a Java-based application integrated with a MySQL database to simplify and automate the management of personal protective equipment (PPE) throughout its lifecycle. It manages employees, safety gear issuance, usage history, inspections, and replacement tracking to ensure workplace safety and compliance.
 
