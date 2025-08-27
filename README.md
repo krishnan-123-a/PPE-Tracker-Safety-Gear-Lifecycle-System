@@ -35,10 +35,10 @@ PPE replacement and history tracking
 
 Report generation for safety audits
 
-OOP CONCEPT
-Main Classes
+**OOP CONCEPT**
+  Main Classes
 
-1. User (Base Class)
+  1. User (Base Class)
 
 Attributes: userId, name, email, phone
 
