@@ -16,28 +16,28 @@
 
 **TARGET USERS**
 
-   **Administrators**: Manage PPE inventory, allocate equipment, and generate reports.
+   1.**Administrators**: Manage PPE inventory, allocate equipment, and generate reports.
 
-   **Employees:** View assigned PPE, check validity, and request replacements.
+   2.**Employees:** View assigned PPE, check validity, and request replacements.
 
-   **Safety Officers:** Inspect PPE, update condition status, and ensure compliance.
+   3.**Safety Officers:** Inspect PPE, update condition status, and ensure compliance.
 
-   **Managers:** Oversee operations, track PPE distribution, and ensure timely replacement.
+   4.**Managers:** Oversee operations, track PPE distribution, and ensure timely replacement.
    
 
 **FEATURES**
 
-   Employee registration and PPE issuance tracking
+  1. Employee registration and PPE issuance tracking
 
-   PPE registration and lifecycle management (issue → usage → inspection → replacement)
+  2. PPE registration and lifecycle management (issue → usage → inspection → replacement)
 
-   Inspection scheduling and compliance updates
+  3. Inspection scheduling and compliance updates
 
-   Notifications for expiring/expired PPE
+  4. Notifications for expiring/expired PPE
 
-   PPE replacement and history tracking
+  5. PPE replacement and history tracking
 
-   Report generation for safety audits
+  6. Report generation for safety audits
 
 
 **OOP CONCEPT**
@@ -80,13 +80,13 @@
 
 OOP IMPLEMENTATION
 
-   Inheritance: Employees and Admins inherit common user features (like login, logout, and contact details) from the base User class.
+  1. Inheritance: Employees and Admins inherit common user features (like login, logout, and contact details) from the base User class.
 
-   Polymorphism: Different user roles (Employee, Admin, Safety Officer) can perform the same method (e.g., generateReports() or updateStatus()) in their own way depending on their role.
+  2. Polymorphism: Different user roles (Employee, Admin, Safety Officer) can perform the same method (e.g., generateReports() or updateStatus()) in their own way depending on their role.
 
-   Association: PPE is associated with Employees (who use it) and Inspections (which ensure safety compliance). Lifecycle records link PPE and Employees together for usage tracking.
+  3. Association: PPE is associated with Employees (who use it) and Inspections (which ensure safety compliance). Lifecycle records link PPE and Employees together for usage tracking.
 
-   Encapsulation: Data like ppeId, inspectionDetails, and employeeAssignment are declared as private to ensure secure data handling.
+  4. Encapsulation: Data like ppeId, inspectionDetails, and employeeAssignment are declared as private to ensure secure data handling.
 
 
 
